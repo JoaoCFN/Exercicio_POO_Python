@@ -56,12 +56,8 @@ class Cachorro():
                     #if self.sexo != parc.sexo:
                         #print("DEU CERTO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             return True
-            #self.cruza = True
         else:
-            #print("NÃO DEU")
             return False
-            #self.cruza = False
-
     # MÉTODO QUE FAZ O CRUZAMENTO DOS CÃES
     def cruzar(self, parc):
         if self.pode_cruzar(parc) == True:
