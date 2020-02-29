@@ -65,19 +65,24 @@
  
  B) Função manipular_cachorro(cao_atual, lista_caes): Exibe um menu com as
  opções: 1) Ver dados do cão; 2) Alimentar; 3) Brincar; 4) Cruzar; 5) Menu Inicial.
+ 
  Quando o usuário escolhe a opção 5, o programa volta para o menu inicial.
+ 
  Quando o usuário escolhe a opção 1, o programa exibe as informações do cão
  atual, chamando o método obter_dados() e exibindo-o numa mensagem.
+ 
  Quando o usuário escolhe a opção 2, o programa verifica se é necessário o cão
  comer, através do nível de sua energia. Se o cão estiver com energia em até 50, o
  programa exibe três opções de alimento para o cão: ração, carne ou legumes. Por
  fim, exibe qual é o nível de energia do cão após se alimentar, utilizando o método
  comer(comida). Então retorna ao menu de manipulação.
+ 
  Quando o usuário escolhe a opção 3, o programa verifica se é possível o cão
  brincar, através do nível de sua energia. Se o cão estiver com energia de 40 para
  mais, o programa exibe três opções de brincadeira para o cão: buscar bolinha,
  saltar ou girar. Por fim, exibe qual é o nível de energia do cão após brincar,
  utilizando o método brincar(brincadeira). Retorna ao menu de manipulação.
+ 
  Quando o usuário escolhe a opção 4, o programa exibe uma lista somente com
  os(as) parceiros(as) possíveis de cruzar com o cão naquele momento (pode ser
  feito usando o método pode_cruzar(parc)). Após selecionar a parceria para o
