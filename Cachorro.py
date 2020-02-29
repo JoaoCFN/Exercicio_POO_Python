@@ -13,6 +13,7 @@ class Cachorro():
 
     # METODO QUE OBTEM OS DADOS DOS 6 ATRIBUTOS
     def obter_dados(self):
+        # RETORNA OS SEIS DADOS DO CACHORRO
         return "Nome: {} \nRaça: {} \nSexo: {} \nIdade : {} \nEnergia: {} \nNúmero de Filhos : {}\n".format(self.nome, self.raca, self.sexo, self.idade, self.energia, self.num_filhotes)
 
     # METODO QUE FAZ O CACHORRO COMER E AUMENTAR SUA ENERGIA
@@ -50,17 +51,13 @@ class Cachorro():
     # MÉTODO QUE VERIFICA SE O CÃO PODE CRUZAR OU NÃO
     def pode_cruzar(self, parc):
         if self.idade >= 1 and self.idade <= 9 and parc.idade >= 1 and parc.idade <= 9 and self.raca == parc.raca and self.energia >= 80 and parc.energia >= 80 and self.sexo != parc.sexo:
-            #print("DEU CERTO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-            #if self.raca == parc.raca:
-                #if self.energia >= 80 and parc.energia >= 80:
-                    #if self.sexo != parc.sexo:
-                        #print("DEU CERTO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
             return True
         else:
             return False
+
     # MÉTODO QUE FAZ O CRUZAMENTO DOS CÃES
     def cruzar(self, parc):
-        if self.pode_cruzar(parc) == True:
+        if self.pode_cruzar(parc):
             filhos = randint(3, 10)
             self.energia -= 50
             parc.energia -= 50
